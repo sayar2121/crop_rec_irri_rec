@@ -1,0 +1,6 @@
+created_at,entry_id,field1,field2,field3,field4,field5,field6,data_source,filled_fields
+2026-08-02 05:58:28 UTC,300,327.0,30.94,3.38,158.0,244.0,261.0,real_with_synthetic_fill,"field3,field4,field5,field6"
+2026-08-02 05:58:51 UTC,301,345.0,30.94,3.37,158.0,244.0,261.0,real_with_synthetic_fill,"field3,field4,field5,field6"
+2026-08-02 05:59:13 UTC,302,375.0,30.94,3.38,158.0,244.0,261.0,real_with_synthetic_fill,"field3,field4,field5,field6"
+2026-08-16 05:24:56 UTC,309,5.0,30.89,3.38,158.0,244.0,261.0,real_with_synthetic_fill,"field2,field3,field4,field5,field6"
+2026-08-16 05:30:01 UTC,318,16.0,30.46,0.0,158.0,244.0,261.0,real_with_synthetic_fill,"field1,field2,field4,field5,field6"
