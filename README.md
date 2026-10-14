@@ -268,6 +268,20 @@ open metamask_anchor.html
 
 Below are the empirical experimental results benchmarked across all **2,200 telemetry packets** evaluating the DASP-DAFO architecture across AI accuracy, processing latencies, network transmission efficiency, fairness scheduling, and decentralized ledger overhead.
 
+### Table: Experimental Results of the Proposed Study
+
+Below are representative physical and enriched sensor telemetry observations showing ambient microclimate readings, soil parameters, AI irrigation decisions, cloud synchronization status, and end-to-end response times under the proposed DASP-DAFO architecture:
+
+| No | Temperature ($^\circ\text{C}$) | Humidity (%) | Soil Moisture (%) | Soil pH | Nitrogen (N) | Phosphorus (P) | Potassium (K) | AI Recommended Crop | Irrigation Status | Send Data to Cloud | Response Time |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **1** | $25.20\,^\circ\text{C}$ | $35.00\%$ | $40.50\%$ | $6.42$ | $158\,\text{mg/kg}$ | $244\,\text{mg/kg}$ | $261\,\text{mg/kg}$ | Maize | 🚨 Urgent (Water Needed) | Yes | $1.92\,\text{ms}$ |
+| **2** | $26.30\,^\circ\text{C}$ | $36.00\%$ | $55.30\%$ | $6.58$ | $158\,\text{mg/kg}$ | $244\,\text{mg/kg}$ | $261\,\text{mg/kg}$ | Maize | ✅ Normal (Soil Moist) | Yes | $1.95\,\text{ms}$ |
+| **3** | $25.10\,^\circ\text{C}$ | $69.25\%$ | $60.10\%$ | $7.04$ | $60\,\text{mg/kg}$ | $48\,\text{mg/kg}$ | $39\,\text{mg/kg}$ | Rice | ✅ Normal (Soil Moist) | Yes | $1.89\,\text{ms}$ |
+| **4** | $27.56\,^\circ\text{C}$ | $40.22\%$ | $75.10\%$ | $6.65$ | $172\,\text{mg/kg}$ | $258\,\text{mg/kg}$ | $276\,\text{mg/kg}$ | Cotton | ✅ Normal (Soil Moist) | Yes | $2.01\,\text{ms}$ |
+| **5** | $28.12\,^\circ\text{C}$ | $39.13\%$ | $36.12\%$ | $5.86$ | $28\,\text{mg/kg}$ | $76\,\text{mg/kg}$ | $82\,\text{mg/kg}$ | Chickpea | 🚨 Urgent (Water Needed) | Yes | $1.94\,\text{ms}$ |
+| **6** | $26.80\,^\circ\text{C}$ | $59.20\%$ | $80.01\%$ | $6.45$ | $85\,\text{mg/kg}$ | $9\,\text{mg/kg}$ | $53\,\text{mg/kg}$ | Muskmelon | ✅ Normal (Soil Moist) | Yes | $1.87\,\text{ms}$ |
+| **7** | $27.90\,^\circ\text{C}$ | $45.30\%$ | $45.10\%$ | $6.01$ | $140\,\text{mg/kg}$ | $40\,\text{mg/kg}$ | $17\,\text{mg/kg}$ | Cotton | 🚨 Urgent (Water Needed) | Yes | $1.98\,\text{ms}$ |
+
 ---
 
 ### Table 1: End-to-End System Performance Comparison
