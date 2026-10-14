@@ -80,7 +80,7 @@ The system supports two independent offline hardware tiers:
 ![Keypad Phone SD Workflow](keypad_phone_sd_workflow.jpg)
 
 **Tier B: Smartphone Dew Node BLE / SoftAP Cache Workflow:**
-![Smartphone Dew Cache Workflow](smartphone_dew_cache_workflow.jpg)
+![Smartphone Dew Cache Workflow](Smartphone%20Dew%20Cache%20Workflow%20Diagram.png)
 
 ---
 
@@ -285,7 +285,7 @@ open metamask_anchor.html
 │
 ├── scientific_paper_system_arch.jpg    # IEEE/ACM system architecture diagram
 ├── keypad_phone_sd_workflow.jpg        # Keypad phone hardware diagram
-├── smartphone_dew_cache_workflow.jpg   # Smartphone Dew cache workflow diagram
+├── Smartphone Dew Cache Workflow Diagram.png # Smartphone Dew cache workflow diagram
 ├── crop_confusion_matrix.png           # 22-Crop unbiased confusion matrix
 ├── correlation_matrix_heatmap.png      # Feature correlation heatmap
 ├── latency_breakdown.png               # Component latency breakdown
