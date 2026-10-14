@@ -1,0 +1,65 @@
+[
+  {
+    "index": 0,
+    "timestamp": 1791949588.1038568,
+    "transactions": [
+      {
+        "type": "GENESIS_ROOT",
+        "message": "DASP-DAFO Smart Agriculture Decentralized Ledger Initialized",
+        "authority": "0xAc08e...8cBD8"
+      }
+    ],
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "066a4f84119a180b06a1d8e38ae2a804be4e33378a077fab54695cfb9bad3222",
+    "validator": "DASP_GENESIS_VALIDATOR",
+    "nonce": 0
+  },
+  {
+    "index": 1,
+    "timestamp": 1791949622.624299,
+    "transactions": [
+      {
+        "tx_id": "9f6721a67c9b9adc70f20c3eb65c2220a9499a6b704b7cdacc0fdc40f6a5bab1",
+        "type": "SENSOR_BATCH_ANCHOR",
+        "device_id": "NODE_01",
+        "packet_count": 100,
+        "first_seq": 1,
+        "last_seq": 100,
+        "ipfs_cid": "QmS8LFGeiRXQYymdxeuNZojhZG8tPBgT3vm9t4neEqWNPW",
+        "merkle_root": "0x1e8192792375b05102e872699e62957681fa800a9fa7078114cef70fdeb92a7a",
+        "first_packet_hash": "4181c6075b4f71365535947834d70193c79190c5cad87a53d8edc9f8b8a8b587",
+        "latest_packet_hash": "fc0557b8d5cf40f8e6110a95d6b93040b3688b6ed70cb52908ace5533b2774b7",
+        "timestamp": 1791949622.624289,
+        "status": "CONFIRMED_ON_CHAIN"
+      }
+    ],
+    "previous_hash": "066a4f84119a180b06a1d8e38ae2a804be4e33378a077fab54695cfb9bad3222",
+    "hash": "00be8a9ebe6e292c9ba5d355238e7bf5c736b38f27d68c5930fa0c087f5d0e6b",
+    "validator": "0xAc08e...8cBD8",
+    "nonce": 669
+  },
+  {
+    "index": 2,
+    "timestamp": 1791949835.900356,
+    "transactions": [
+      {
+        "tx_id": "734f221d6092d4b5319bba99d25be81d77fdc7ca23894b73fdcda967eca56e45",
+        "type": "SENSOR_BATCH_ANCHOR",
+        "device_id": "NODE_01",
+        "packet_count": 100,
+        "first_seq": 1,
+        "last_seq": 100,
+        "ipfs_cid": "QmS8LFGeiRXQYymdxeuNZojhZG8tPBgT3vm9t4neEqWNPW",
+        "merkle_root": "0x1e8192792375b05102e872699e62957681fa800a9fa7078114cef70fdeb92a7a",
+        "first_packet_hash": "4181c6075b4f71365535947834d70193c79190c5cad87a53d8edc9f8b8a8b587",
+        "latest_packet_hash": "fc0557b8d5cf40f8e6110a95d6b93040b3688b6ed70cb52908ace5533b2774b7",
+        "timestamp": 1791949835.900347,
+        "status": "CONFIRMED_ON_CHAIN"
+      }
+    ],
+    "previous_hash": "00be8a9ebe6e292c9ba5d355238e7bf5c736b38f27d68c5930fa0c087f5d0e6b",
+    "hash": "009c4726a680f33dece66929d16f21bec426bad3ba1776d02e7efbc0b8eb0b54",
+    "validator": "0xAc08e...8cBD8",
+    "nonce": 79
+  }
+]

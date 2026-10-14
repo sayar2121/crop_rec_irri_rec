@@ -14,6 +14,9 @@ def cloud_verify_packet(packet, public_key, expected_previous_hash):
     packet_sig = packet_data.pop("signature")
     packet_data.pop("sync_status", None)
     packet_data.pop("FairnessScore", None)
+    packet_data.pop("blockchain_block_index", None)
+    packet_data.pop("blockchain_block_hash", None)
+    packet_data.pop("blockchain_tx_id", None)
     
     packet_string = json.dumps(packet_data, sort_keys=True).encode('utf-8')
     
