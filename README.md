@@ -245,6 +245,12 @@ The system provides a real Web3 browser portal (`metamask_anchor.html`) connecti
 
 ---
 
+### Step 16: Regression & Federated Learning Model Benchmarking (Table 5)
+- **Script:** `python3 step16_benchmark_regression_fl.py`
+- **Functionality:** Executes empirical cross-validation across 17 centralized regression architectures and the proposed 5-node Decentralized Federated Learning model (`FedAvg-XGBoost`). Predicts soil moisture dynamics and irrigation demand from soil chemistry ($N, P, K$) and microclimate variables ($\text{Temp}, pH, \text{Rainfall}$), outputting full MAE, MSE, RMSE, $R^2$, RMSLE, MAPE, and training execution time (TT).
+
+---
+
 ## 💻 Interactive User Tools
 
 ### 1. Interactive AI Crop & Irrigation Predictor
@@ -398,6 +404,7 @@ Below are representative physical and enriched sensor telemetry observations sho
 ├── step13_plot_bandwidth.py            # Bandwidth usage, payload overhead & rural cost benchmarks
 ├── step14_plot_cloud_transactions.py   # Cloud transaction efficiency & batch scaling evaluator
 ├── step15_plot_fairness.py             # DAFO multi-objective fairness & Jain index evaluator
+├── step16_benchmark_regression_fl.py   # Regression & Federated Learning benchmarking script
 ├── interactive_predictor.py            # CLI manual test tool
 ├── metamask_anchor.html                # Web3 MetaMask anchoring interface
 │
