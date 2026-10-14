@@ -42,6 +42,21 @@ The pipeline is trained and benchmarked on the universal precision agriculture d
 
 ---
 
+## 📡 Real-Time IoT Sensor Telemetry Stream (Live Field Hardware)
+
+The architecture connects live edge field sensor nodes to cloud/dew dashboards (e.g. ThingSpeak IoT cloud stream) capturing physical field telemetry in real time:
+
+| Field Stream | Parameter Monitored | Real-Time Telemetry Curve | Dynamic Agronomic Behavior |
+| :---: | :---: | :---: | :--- |
+| **Field 1** | **Soil Moisture** | ![Soil Moisture Chart](Screenshot%202026-10-14%20at%2010.45.04%E2%80%AFAM.png) | Monitored dynamically across irrigation events ($320 \to 390$ scale). |
+| **Field 2** | **Ambient Temperature** | ![Temperature Chart](Screenshot%202026-10-14%20at%2010.45.10%E2%80%AFAM.png) | Continuous microclimate fluctuations ($28.5^\circ\text{C} \to 29.0^\circ\text{C}$). |
+| **Field 3** | **Soil pH Index** | ![pH Chart](Screenshot%202026-10-14%20at%2010.45.16%E2%80%AFAM.png) | Soil acidity and chemical fertilizer response ($0.0 \to 4.5$ dynamic range). |
+| **Field 4** | **Nitrogen (N)** | ![Nitrogen Chart](Screenshot%202026-10-14%20at%2010.45.23%E2%80%AFAM.png) | Real-time optical/EC nitrogen titration ($157 \to 175\text{ mg/kg}$). |
+| **Field 5** | **Phosphorus (P)** | ![Phosphorus Chart](Screenshot%202026-10-14%20at%2010.45.29%E2%80%AFAM.png) | Soil root zone bioavailability ($243 \to 260\text{ mg/kg}$). |
+| **Field 6** | **Potassium (K)** | ![Potassium Chart](Screenshot%202026-10-14%20at%2010.45.36%E2%80%AFAM.png) | Soil potassium concentration tracking ($260 \to 278\text{ mg/kg}$). |
+
+---
+
 ## 🚀 Complete Step-by-Step Execution Pipeline (Step 1 to Step 15)
 
 Every step in the research framework is modular, executable, and validated with deterministic test logs and high-resolution academic diagrams.
@@ -311,7 +326,13 @@ open metamask_anchor.html
 ├── fairness_ordering_analysis.png      # DAFO fairness score & Jain index evaluation
 ├── Screenshot 2026-10-14 at 9.10.32 AM.png # MetaMask portal initial connection
 ├── Screenshot 2026-10-14 at 9.15.02 AM.png # MetaMask EIP-712 signature request
-└── Screenshot 2026-10-14 at 9.15.09 AM.png # Confirmed cryptographic on-chain settlement
+├── Screenshot 2026-10-14 at 9.15.09 AM.png # Confirmed cryptographic on-chain settlement
+├── Screenshot 2026-10-14 at 10.45.04 AM.png # Live Field 1 Soil Moisture stream
+├── Screenshot 2026-10-14 at 10.45.10 AM.png # Live Field 2 Temperature stream
+├── Screenshot 2026-10-14 at 10.45.16 AM.png # Live Field 3 pH stream
+├── Screenshot 2026-10-14 at 10.45.23 AM.png # Live Field 4 Nitrogen (N) stream
+├── Screenshot 2026-10-14 at 10.45.29 AM.png # Live Field 5 Phosphorus (P) stream
+└── Screenshot 2026-10-14 at 10.45.36 AM.png # Live Field 6 Potassium (K) stream
 ```
 
 ---

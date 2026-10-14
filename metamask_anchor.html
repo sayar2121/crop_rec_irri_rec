@@ -140,6 +140,23 @@
       color: #fecaca;
       display: block !important;
     }
+    .text-muted {
+      color: #cbd5e1;
+    }
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .btn-blue {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+    .btn-green {
+      background: #10b981;
+      color: #042f2e;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -154,11 +171,11 @@
   <div class="card-info">
     <div class="row">
       <span class="label">Connected Account:</span>
-      <span id="accountDisplay" class="value" style="color: #cbd5e1;">Not Connected</span>
+      <span id="accountDisplay" class="value text-muted">Not Connected</span>
     </div>
     <div class="row">
       <span class="label">Network:</span>
-      <span id="networkDisplay" class="value" style="color: #cbd5e1;">-</span>
+      <span id="networkDisplay" class="value text-muted">-</span>
     </div>
     <div class="row">
       <span class="label">IPFS CIDv0:</span>
@@ -174,16 +191,16 @@
     </div>
   </div>
 
-  <button id="connectBtn" class="btn-connect" onclick="connectMetaMask()">
+  <button id="connectBtn" type="button" class="btn-connect" onclick="connectMetaMask()">
     🦊 Connect MetaMask
   </button>
 
-  <div style="display: flex; gap: 10px; margin-top: 15px;">
-    <button id="signEIP712Btn" class="btn-anchor btn-disabled" onclick="signWithEIP712()" disabled style="background: #38bdf8; color: #0f172a;">
+  <div class="button-group">
+    <button id="signEIP712Btn" type="button" class="btn-anchor btn-disabled btn-blue" onclick="signWithEIP712()" disabled>
       ✍️ Free Cryptographic Web3 Anchor (0 Gas / Instant)
     </button>
   </div>
-  <button id="sendTxBtn" class="btn-anchor btn-disabled" onclick="sendContractAnchor()" disabled style="background: #10b981; color: #042f2e; margin-top: 8px;">
+  <button id="sendTxBtn" type="button" class="btn-anchor btn-disabled btn-green" onclick="sendContractAnchor()" disabled>
     ⛓️ Broadcast On-Chain Transaction (Deploy Smart Record)
   </button>
 
