@@ -274,9 +274,37 @@ open metamask_anchor.html
 
 Below are the empirical experimental results benchmarked across all **2,200 telemetry packets** evaluating the DASP-DAFO architecture across AI accuracy, processing latencies, network transmission efficiency, fairness scheduling, and decentralized ledger overhead.
 
-### Table: Experimental Results of the Proposed Study
+### Table 1: Configuration of Cloud, Fog, and Dew Computing Layers
 
-Below are representative physical and enriched sensor telemetry observations showing ambient microclimate readings, soil parameters, AI irrigation decisions, cloud synchronization status, and end-to-end response times under the proposed DASP-DAFO architecture:
+| Parameters | Cloud Layer | Fog / Gateway Layer | Dew Node Layer |
+| :--- | :---: | :---: | :---: |
+| **RAM** | $16\text{ GB}$ | $2\text{ GB}$ | $1\text{ GB}$ (Smartphone) / $520\text{ KB}$ (ESP32) |
+| **Uplink Bandwidth (Mbps)** | $100\text{ Mbps}$ | $100\text{ Mbps}$ | $50\text{ Mbps}$ |
+| **Downlink Bandwidth (Mbps)** | $100\text{ Mbps}$ | $50\text{ Mbps}$ | $10\text{ Mbps}$ |
+| **Architectural Level** | Level $0$ (Global Server) | Level $1$ (Edge Gateway) | Level $2$ (Dew / In-Field Node) |
+| **MIPS (Processing Power)** | $44,800\text{ MIPS}$ | $2,800\text{ MIPS}$ | $1,000\text{ MIPS}$ |
+
+---
+
+### Table 2: Parameters Used in Experimental / Simulation Study
+
+| Parameters | Value | Scientific Reference / Specification |
+| :--- | :---: | :--- |
+| **Sensor latency** | $5\text{ ms}$ | Hardware sampling & ADC conversion delay |
+| **Dew uplink latency** | $2\text{ ms}$ | Local BLE 5.0 / SoftAP / SPI transmit latency |
+| **Dew downlink latency** | $1\text{ ms}$ | Actuator signal propagation delay |
+| **Fog latency** | $10\text{ ms}$ | Local LAN / Gateway processing delay |
+| **Cloud latency** | $100\text{ ms}$ | WAN cellular round-trip time (RTT) |
+| **Data pre-processing latency** | $10\text{ ms}$ | Outlier filtering, normalization & feature scaling |
+| **Data analysis latency** | $10\text{ ms}$ | XGBoost inference & DAFO priority calculation |
+| **Sensor reading interval** | $5\text{ ms}$ | High-frequency telemetry acquisition window |
+| **Energy per IoT node** | $2\text{ J}$ | Operational energy budget per transmission cycle |
+| **Number of Fog nodes** | $1$ | Central agricultural field aggregator |
+| **Number of Dew devices** | $3$ | Distributed farm Dew nodes (3-node in-field cluster) |
+
+---
+
+### Table 3: Experimental Telemetry Observations and Response Verification
 
 | No | Temperature ($^\circ\text{C}$) | Humidity (%) | Soil Moisture (%) | Soil pH | Nitrogen (N) | Phosphorus (P) | Potassium (K) | AI Recommended Crop | Irrigation Status | Send Data to Cloud | Response Time |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -290,7 +318,7 @@ Below are representative physical and enriched sensor telemetry observations sho
 
 ---
 
-### Table 1: End-to-End System Performance Comparison
+### Table 4: End-to-End System Performance Comparison
 
 | Performance Metric | Evaluation Criteria | Traditional Direct Cloud | Edge-Only (No Security) | Proposed DASP-DAFO Protocol | Scientific Improvement |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -306,7 +334,7 @@ Below are representative physical and enriched sensor telemetry observations sho
 
 ---
 
-### Table 2: Microsecond-Precision Processing Latency Profile (2,200 Records)
+### Table 5: Microsecond-Precision Processing Latency Profile (2,200 Records)
 
 | Pipeline Stage | Executing Layer | Mean Latency | Median ($p_{50}$) | 95th Percentile ($p_{95}$) | 99th Percentile ($p_{99}$) | Computational Complexity |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -319,7 +347,7 @@ Below are representative physical and enriched sensor telemetry observations sho
 
 ---
 
-### Table 3: Unbiased Machine Learning Classification Metrics (Stratified 5-Fold Cross-Validation)
+### Table 6: Unbiased Machine Learning Classification Metrics (Stratified 5-Fold Cross-Validation)
 
 *Evaluated with $\pm 7\%$ Gaussian probe sensor noise injected across all 2,200 samples to prevent artificial memorization.*
 
@@ -333,7 +361,7 @@ Below are representative physical and enriched sensor telemetry observations sho
 
 ---
 
-### Table 4: Dew Layer Hardware Tier Trade-Off Analysis
+### Table 7: Dew Layer Hardware Tier Trade-Off Analysis
 
 | Hardware Attribute | Tier A: Keypad Phone Logging Node | Tier B: Smartphone Dew Computing Node |
 | :--- | :--- | :--- |
@@ -349,7 +377,7 @@ Below are representative physical and enriched sensor telemetry observations sho
 
 ---
 
-### Table 5: Comparison of Regression and Edge Federated Learning Models
+### Table 8: Comparison of Regression and Edge Federated Learning Models
 
 *Comparison of centralized regression algorithms and the proposed Dew Decentralized Federated Learning (FedAvg-XGBoost) model predicting Soil Moisture and Irrigation Demand from ambient soil nutrients ($N, P, K$) and microclimate variables ($\text{Temp}, pH, \text{Rainfall}$).*
 
