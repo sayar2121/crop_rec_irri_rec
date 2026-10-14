@@ -343,6 +343,32 @@ Below are representative physical and enriched sensor telemetry observations sho
 
 ---
 
+### Table 5: Comparison of Regression and Edge Federated Learning Models
+
+*Comparison of centralized regression algorithms and the proposed Dew Decentralized Federated Learning (FedAvg-XGBoost) model predicting Soil Moisture and Irrigation Demand from ambient soil nutrients ($N, P, K$) and microclimate variables ($\text{Temp}, pH, \text{Rainfall}$).*
+
+| Model | MAE | MSE | RMSE | $R^2$ | RMSLE | MAPE | TT (s) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Extra Trees Regressor (et)** | $0.1658$ | $0.0626$ | $0.2502$ | $0.9423$ | $0.1116$ | $0.0685$ | $0.2548$ |
+| **Random Forest Regressor (rf)** | $0.1833$ | $0.0850$ | $0.2915$ | $0.9217$ | $0.1415$ | $0.0827$ | $0.6147$ |
+| **Extreme Gradient Boosting (xgboost)** | $0.1980$ | $0.0895$ | $0.2992$ | $0.9176$ | $0.1325$ | $0.0831$ | $0.0778$ |
+| **Gradient Boosting Regressor (gbr)** | $0.2457$ | $0.1197$ | $0.3460$ | $0.8898$ | $0.1649$ | $0.1118$ | $0.2559$ |
+| **Decision Tree Regressor (dt)** | $0.2244$ | $0.1411$ | $0.3756$ | $0.8701$ | $0.1695$ | $0.0908$ | $0.0108$ |
+| **K Neighbors Regressor (knn)** | $0.2254$ | $0.1464$ | $0.3826$ | $0.8652$ | $0.1784$ | $0.1003$ | $0.0041$ |
+| **Proposed Federated Learning Dew (FedAvg-XGB)** | **$0.2983$** | **$0.1691$** | **$0.4112$** | **$0.8443$** | **$0.1652$** | **$0.1384$** | **$0.2240$** |
+| **AdaBoost Regressor (ada)** | $0.3843$ | $0.2322$ | $0.4819$ | $0.7862$ | $0.2487$ | $0.1950$ | $0.1101$ |
+| **Linear Regression (lr)** | $0.6695$ | $0.7691$ | $0.8770$ | $0.2917$ | $0.4268$ | $0.3993$ | $0.0008$ |
+| **Ridge Regression (ridge)** | $0.6695$ | $0.7691$ | $0.8770$ | $0.2917$ | $0.4268$ | $0.3993$ | $0.0007$ |
+| **Bayesian Ridge (br)** | $0.6714$ | $0.7717$ | $0.8785$ | $0.2894$ | $0.4277$ | $0.4005$ | $0.0009$ |
+| **Elastic Net (en)** | $0.6728$ | $0.7733$ | $0.8794$ | $0.2879$ | $0.4269$ | $0.3994$ | $0.0008$ |
+| **Lasso Regression (lasso)** | $0.6737$ | $0.7759$ | $0.8808$ | $0.2855$ | $0.4269$ | $0.3995$ | $0.0007$ |
+| **Huber Regressor (huber)** | $0.6412$ | $0.8610$ | $0.9279$ | $0.2071$ | $0.4560$ | $0.4336$ | $0.0141$ |
+| **Passive Aggressive Regressor (par)** | $0.7631$ | $0.9159$ | $0.9570$ | $0.1566$ | $0.6258$ | $0.8035$ | $0.0013$ |
+| **Orthogonal Matching Pursuit (omp)** | $0.7981$ | $1.0550$ | $1.0271$ | $0.0285$ | $0.4802$ | $0.4813$ | $0.0006$ |
+| **Dummy Regressor (dummy)** | $0.8427$ | $1.0862$ | $1.0422$ | $-0.0003$ | $0.4818$ | $0.4920$ | $0.0001$ |
+
+---
+
 ## 📁 Repository File Tree
 
 ```
