@@ -245,9 +245,27 @@ The system provides a real Web3 browser portal (`metamask_anchor.html`) connecti
 
 ---
 
-### Step 16: Regression & Federated Learning Model Benchmarking (Table 5)
+### Step 16: Regression & Federated Learning Model Benchmarking (Table 8)
 - **Script:** `python3 step16_benchmark_regression_fl.py`
 - **Functionality:** Executes empirical cross-validation across 17 centralized regression architectures and the proposed 5-node Decentralized Federated Learning model (`FedAvg-XGBoost`). Predicts soil moisture dynamics and irrigation demand from soil chemistry ($N, P, K$) and microclimate variables ($\text{Temp}, pH, \text{Rainfall}$), outputting full MAE, MSE, RMSE, $R^2$, RMSLE, MAPE, and training execution time (TT).
+
+---
+
+### Step 17: Packet Delivery Ratio (PDR) & Bandwidth Scaling Protocol Comparisons
+- **Script:** `python3 step17_plot_pdr_bandwidth_comparisons.py`
+- **Output File:** `pdr_and_bandwidth_comparison_diagram.png`
+- **Functionality:** Benchmarks the proposed DEW-assisted protocol against Conventional MQTT and Direct Sensor-to-Cloud across three fundamental network metrics:
+  1. **Graph A — Packet Delivery Ratio ($\text{PDR}$):**
+     $$\text{PDR} = \frac{P_{\text{received}}}{P_{\text{sent}}} \times 100$$
+     Evaluates delivery reliability over prolonged network disruption (0 to 72 hours). While Direct Cloud collapses to $0.0\%$ and conventional MQTT drops to $8.5\%$ due to broker queue overflow, the Proposed DEW-Assisted protocol sustains **$99.1\%$ PDR** via local non-volatile cache and priority re-sync.
+  2. **Graph B — Bandwidth Utilisation ($U_B$):**
+     $$U_B = \frac{B_{\text{used}}}{B_{\text{available}}} \times 100$$
+     Measures channel saturation against available bandwidth. Direct Cloud consumes $74.2\%$ of channel capacity and MQTT consumes $52.8\%$, whereas the Proposed DEW protocol operates at just **$24.6\%$** (a **$66.8\%$ load reduction** vs Direct Cloud).
+  3. **Graph C — Bandwidth Consumption vs. Number of Sensor Nodes:**
+     Scales across 10, 20, 30, 40, and 50 physical sensor nodes, explicitly separating **local DEW-layer traffic** (free local BLE/SPI) from **WAN traffic transmitted to the cloud**. Demonstrates that at 50 nodes, WAN transmission is reduced by **$81.6\%$** ($170\text{ KB/min}$ vs $925\text{ KB/min}$ for Direct Cloud).
+
+#### Generated Diagram:
+![PDR and Bandwidth Comparison Diagram](pdr_and_bandwidth_comparison_diagram.png)
 
 ---
 
@@ -433,6 +451,7 @@ Below are the empirical experimental results benchmarked across all **2,200 tele
 ├── step14_plot_cloud_transactions.py   # Cloud transaction efficiency & batch scaling evaluator
 ├── step15_plot_fairness.py             # DAFO multi-objective fairness & Jain index evaluator
 ├── step16_benchmark_regression_fl.py   # Regression & Federated Learning benchmarking script
+├── step17_plot_pdr_bandwidth_comparisons.py # 3-Graph PDR, bandwidth utilisation & node scaling suite
 ├── interactive_predictor.py            # CLI manual test tool
 ├── metamask_anchor.html                # Web3 MetaMask anchoring interface
 │
@@ -448,6 +467,7 @@ Below are the empirical experimental results benchmarked across all **2,200 tele
 ├── dew_layer_comparison_diagram.png    # Dew computing 4-panel comparison diagram
 ├── packet_delivery_ratio_analysis.png  # PDR vs link loss & blackout duration curves
 ├── bandwidth_usage_analysis.png        # Bandwidth consumption & transmission efficiency analysis
+├── pdr_and_bandwidth_comparison_diagram.png # 3-Graph PDR & bandwidth comparison diagram
 ├── cloud_transactions_analysis.png     # Cloud & blockchain transaction volume comparison
 ├── fairness_ordering_analysis.png      # DAFO fairness score & Jain index evaluation
 ├── Screenshot 2026-10-14 at 9.10.32 AM.png # MetaMask portal initial connection
