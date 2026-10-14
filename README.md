@@ -125,6 +125,18 @@ The system supports two independent offline hardware tiers:
     $$\text{Merkle Root} = \text{0x1e8192792375b05102e872699e62957681fa800a9fa7078114cef70fdeb92a7a}$$
   - Generates EIP-712 structured data payloads for browser Web3 anchoring via MetaMask.
 
+#### Web3 MetaMask Anchoring Portal Demonstration:
+The system provides a real Web3 browser portal (`metamask_anchor.html`) connecting directly to MetaMask wallets:
+
+1. **Sensor Batch Ready for Web3 Connection:**
+![MetaMask Web3 Portal Initial State](Screenshot%202026-10-14%20at%209.10.32%E2%80%AFAM.png)
+
+2. **EIP-712 Gasless Cryptographic Signature Request:**
+![MetaMask EIP-712 Signature Prompt](Screenshot%202026-10-14%20at%209.15.02%E2%80%AFAM.png)
+
+3. **Confirmed On-Chain Cryptographic Settlement:**
+![MetaMask Signature Confirmed](Screenshot%202026-10-14%20at%209.15.09%E2%80%AFAM.png)
+
 ---
 
 ### Step 8: Real Blockchain Miner & Decentralized Ledger Settlement
@@ -296,7 +308,10 @@ open metamask_anchor.html
 ├── packet_delivery_ratio_analysis.png  # PDR vs link loss & blackout duration curves
 ├── bandwidth_usage_analysis.png        # Bandwidth consumption & transmission efficiency analysis
 ├── cloud_transactions_analysis.png     # Cloud & blockchain transaction volume comparison
-└── fairness_ordering_analysis.png      # DAFO fairness score & Jain index evaluation
+├── fairness_ordering_analysis.png      # DAFO fairness score & Jain index evaluation
+├── Screenshot 2026-10-14 at 9.10.32 AM.png # MetaMask portal initial connection
+├── Screenshot 2026-10-14 at 9.15.02 AM.png # MetaMask EIP-712 signature request
+└── Screenshot 2026-10-14 at 9.15.09 AM.png # Confirmed cryptographic on-chain settlement
 ```
 
 ---
